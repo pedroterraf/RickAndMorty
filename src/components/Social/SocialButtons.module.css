@@ -1,0 +1,60 @@
+.socialButtons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .facebookimg {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .twitterimg {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .instagramimg {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .socialButtons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 6px;
+    border-radius: 50%;
+    color: rgb(62, 62, 62);
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+  }
+  
+  .socialButtons a:hover {
+    background-color: white;
+    box-shadow: 3px 3px 7px rgba(255, 255, 255, 0.3);
+    transition: 1000ms;
+  }
+
+  .twitterimg:active {
+    transform: translateX(1px);
+    box-shadow: 3px 3px 7px white;
+    border-radius: 25px;
+  }
+
+  .instagramimg:active {
+    transform: translateX(1px);
+    box-shadow: 3px 3px 7px white;
+    border-radius: 25px;
+  }
+
+  .facebookimg:active {
+    transform: translateX(1px);
+    box-shadow: 3px 3px 7px white;
+    border-radius: 25px;
+  }
+ 
+  
+  

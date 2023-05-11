@@ -1,0 +1,140 @@
+.buttonBack {
+  height: 40px;
+  width: 100px;
+  border-radius: 25px;
+  background: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+  font-family: 'Damion', cursive;
+  font-size: larger;
+  border: none;
+  color: rgb(161, 161, 161);
+  transition: 500ms;
+  z-index: 1050;
+  top: 5px;
+  left: 280px;
+}
+
+.buttonBack:hover {
+  box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+  color: #d6d6d6;
+  transition: 500ms;
+}
+
+.buttonBackText{
+  color: white;
+  text-decoration: none;
+  font-family: 'Damion', cursive;
+  font-size: 18px;
+}
+
+
+/* .buttonBack{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    z-index: 1050;
+    border-radius: 25px;
+    top: 0px;
+    left: 60px;
+}
+
+.buttonBack:active {
+  transform: translateX(1px);
+  box-shadow: 3px 3px 7px white;
+  border-radius: 25px;
+}
+
+.buttonBack a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.buttonBack:hover a {
+  box-shadow: 3px 3px 7px rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+} */
+
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  z-index: 1050;
+  border-radius: 25px;
+  top: 200px;
+  left: 44%;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  font-family: 'Creepster', cursive;
+  font-size: 22px;
+  font-weight: 800;
+  text-shadow: 4px 4px 8px black;
+}
+
+.image{
+  width: 250px;
+  height: 250px;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+h4 {
+  margin: 10px 0 0 0;
+  color: rgb(2, 0, 128);
+}
+
+h3 {
+  margin: 10px;
+  color: yellow;
+}
+
+.flipCard {
+  background-color: transparent;
+  perspective: 250px; 
+  border-radius: 25px;
+}
+
+.flipCardInner {
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 25px;
+}
+
+.flipCard:hover .flipCardInner {
+  transform: rotateY(180deg);
+  box-shadow: 3px 3px 10px rgba(180, 180, 0, 0.655);
+}
+
+.flipCardFront, .flipCardBack {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+  border-radius: 25px;
+}
+
+.flipCardBack {
+  background-image: url('https://i.pinimg.com/originals/64/5c/8d/645c8d877f6e2aad7fa6545140c72a52.gif');
+  background-size: cover;
+  background-position: center;
+  transform: rotateY(180deg);
+  border-radius: 25px;
+}

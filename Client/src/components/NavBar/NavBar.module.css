@@ -1,0 +1,200 @@
+.mybuttonFav {
+display: flex;
+justify-content: space-around;
+align-items: center;
+position: fixed;
+--glow-color: rgba(0, 126, 0, 0.781);
+--glow-spread-color: rgba(0, 126, 0, 0.781);
+--enhanced-glow-color: rgba(0, 126, 0, 0.781);
+--btn-color: rgba(255, 255, 255, 0);
+border: none;
+font-size: 18px;
+font-weight: bold;
+background-color: var(--btn-color);
+border-radius: 25px;
+outline: none;
+text-shadow: 0 0 .5em var(--glow-color);
+color: black;
+transition: 500ms;
+z-index: 1050;
+top: 5px;
+left: 400px;
+width: 100px;
+height: 40px;
+}
+
+.mybuttonFav::after {
+pointer-events: none;
+background-color: var(--glow-spread-color);
+filter: blur(2em);
+opacity: .7;
+transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.mybuttonFav:hover {
+transition: 500ms;
+color: var(--btn-color);
+box-shadow: 0 0 0.9em .20em var(--glow-color),
+0 0 1em 0.9em var(--glow-spread-color),
+inset 0 0 .50em .20em var(--glow-color);
+}
+
+.mybuttonFav:active {
+box-shadow: 0 0 0.9em .20em var(--glow-color),
+0 0 1em 0.9em var(--glow-spread-color),
+inset 0 0 .50em .20em var(--glow-color);
+}
+
+.textFav{
+font-family: 'Creepster', cursive;
+color: #ffffff;
+text-shadow: 4px 4px 8px black;
+-webkit-text-stroke: 0.2px #000000;
+text-decoration: none;
+font-size: 24px;
+}
+
+.mybuttonAbout {
+display: flex;
+justify-content: space-around;
+align-items: center;
+position: fixed;
+--glow-color: rgba(0, 126, 0, 0.781);
+--glow-spread-color: rgba(0, 126, 0, 0.781);
+--enhanced-glow-color: rgba(0, 126, 0, 0.781);
+--btn-color: rgba(255, 255, 255, 0);
+border: none;
+font-size: 18px;
+font-weight: bold;
+background-color: var(--btn-color);
+border-radius: 25px;
+outline: none;
+text-shadow: 0 0 .5em var(--glow-color);
+color: black;
+transition: 500ms;
+z-index: 1050;
+top: 5px;
+left: 180px;
+width: 100px;
+height: 40px;
+}
+
+.mybuttonAbout::after {
+pointer-events: none;
+background-color: var(--glow-spread-color);
+filter: blur(2em);
+opacity: .7;
+transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.mybuttonAbout:hover {
+transition: 500ms;
+color: var(--btn-color);
+box-shadow: 0 0 0.9em .20em var(--glow-color),
+0 0 1em 0.9em var(--glow-spread-color),
+inset 0 0 .50em .20em var(--glow-color);
+}
+
+.mybuttonAbout:active {
+box-shadow: 0 0 0.9em .20em var(--glow-color),
+0 0 1em 0.9em var(--glow-spread-color),
+inset 0 0 .50em .20em var(--glow-color);
+}
+
+.textAbout{
+font-family: 'Creepster', cursive;
+color: #ffffff;
+text-shadow: 4px 4px 8px black;
+-webkit-text-stroke: 0.2px #000000;
+text-decoration: none;
+font-size: 24px;
+}
+
+.mybuttonHome {
+display: flex;
+justify-content: space-around;
+align-items: center;
+position: fixed;
+--glow-color: rgba(0, 126, 0, 0.781);
+--glow-spread-color: rgba(0, 126, 0, 0.781);
+--enhanced-glow-color: rgba(0, 126, 0, 0.781);
+--btn-color: transparent;
+border: none;
+background-color: var(--btn-color);
+border-radius: 25px;
+outline: none;
+text-shadow: 0 0 .5em var(--glow-color);
+color: rgba(0, 0, 0, 0);
+transition: 500ms;
+z-index: 1050;
+top: 5px;
+left: 290px;
+width: 100px;
+height: 40px;
+}
+
+.mybuttonHome::after {
+pointer-events: none;
+background-color: var(--glow-spread-color);
+filter: blur(2em);
+opacity: .7;
+transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.mybuttonHome:hover {
+transition: 500ms;
+color: var(--btn-color);
+box-shadow: 0 0 0.9em .20em var(--glow-color),
+0 0 1em 0.9em var(--glow-spread-color),
+inset 0 0 .50em .20em var(--glow-color);
+}
+
+.mybuttonHome:active {
+box-shadow: 0 0 0.9em .20em var(--glow-color),
+0 0 1em 0.9em var(--glow-spread-color),
+inset 0 0 .50em .20em var(--glow-color);
+}
+
+.textHome{
+font-family: 'Creepster', cursive;
+color: #ffffff;
+text-shadow: 4px 4px 8px black;
+-webkit-text-stroke: 0.2px #000000;
+text-decoration: none;
+font-size: 24px;
+}
+
+.logout {
+display: flex;
+justify-content: space-around;
+align-items: center;
+position: fixed;
+cursor: pointer;
+background-color: transparent;
+border: none;
+z-index: 1050;
+border-radius: 25px;
+top: 0px;
+left: 0px;
+}
+
+.logout:hover {
+background-color: rgba(255, 0, 0, 0.185);
+border-radius: 25px;;
+transition: 500ms;
+box-shadow: 0 0 0.01em .01em rgba(255, 0, 0, 0.373),
+0 0 2em 0.03em rgba(255, 0, 0, 0.388),
+inset 0 0 .01em .01em rgba(255, 0, 0, 0.31);
+}
+
+.logout:active {
+transform: translateY(1px);
+}
+
+.mybuttonAbout:active {
+transform: translateY(1px);
+}
+
+.mybuttonHome:active {
+transform: translateY(1px);
+}

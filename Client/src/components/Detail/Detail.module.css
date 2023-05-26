@@ -1,0 +1,144 @@
+.buttonBack {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  --glow-color: rgba(0, 126, 0, 0.781);
+  --glow-spread-color: rgba(0, 126, 0, 0.781);
+  --enhanced-glow-color: rgba(0, 126, 0, 0.781);
+  --btn-color: transparent;
+  border: none;
+  background-color: var(--btn-color);
+  border-radius: 25px;
+  outline: none;
+  text-shadow: 0 0 .5em var(--glow-color);
+  color: black;
+  transition: 500ms;
+  z-index: 1050;
+  top: 5px;
+  left: 520px;
+  width: 100px;
+  height: 40px;
+ }
+ 
+ .buttonBack::after {
+  pointer-events: none;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: .7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+ }
+ 
+ .buttonBack:hover {
+  transition: 1000ms;
+  color: var(--btn-color);
+  box-shadow: 0 0 0.9em .20em var(--glow-color),
+         0 0 1em 0.9em var(--glow-spread-color),
+         inset 0 0 .50em .20em var(--glow-color);
+ }
+ 
+ .buttonBack:active {
+  box-shadow: 0 0 0.9em .20em var(--glow-color),
+         0 0 1em 0.9em var(--glow-spread-color),
+         inset 0 0 .50em .20em var(--glow-color);
+ }
+
+.buttonBackText{
+  font-family: 'Creepster', cursive;
+  color: #ffffff;
+  text-shadow: 4px 4px 8px black;
+  -webkit-text-stroke: 0.2px #000000;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  z-index: 1050;
+  border-radius: 25px;
+  top: 200px;
+  left: 44%;
+  width: 300px;
+  height: 300px;
+}
+
+.image{
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+.h4 {
+  font-family: 'Creepster', cursive;
+  color: #00ff22;
+  text-shadow: 4px 4px 8px black;
+  -webkit-text-stroke: 0.4px #000000;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+.name {
+  font-family: 'Creepster', cursive;
+  color: #d4ff00;
+  text-decoration-color: rgb(0, 255, 55);
+  -webkit-text-stroke: 0.4px #000000;
+  text-decoration: none;
+  font-size: 26px;
+  text-shadow: 4px 4px 8px black;
+}
+
+.flipCard {
+  background-color: transparent;
+  perspective: 300px; 
+  border-radius: 25px;
+}
+
+.flipCardInner {
+  width: 300px;
+  height: 300px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 25px;
+}
+
+.flipCard:hover .flipCardInner {
+  transform: rotateY(180deg);
+  box-shadow: 3px 3px 10px rgba(180, 180, 0, 0.655);
+}
+
+.flipCardFront, .flipCardBack {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+  border-radius: 25px;
+}
+
+.flipCardBack {
+  background-image: url('https://i.pinimg.com/originals/64/5c/8d/645c8d877f6e2aad7fa6545140c72a52.gif');
+  background-size: cover;
+  background-position: center;
+  transform: rotateY(180deg);
+  border-radius: 25px;
+}
+
+.flipCardBack:hover{
+  transition: 1500ms;
+  color: rgb(212, 255, 0);
+  box-shadow: 0 0 0.9em .20em rgb(212, 255, 0),
+  0 0 10em 0.9em rgb(212, 255, 0),
+  inset 0 0 .50em .20em rgb(212, 255, 0);
+}

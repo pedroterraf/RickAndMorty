@@ -16,7 +16,7 @@
          inset 0 0 .75em .25em var(--glow-color);
   text-shadow: 0 0 .5em var(--glow-color);
   position: relative;
-  transition: all 0.3s;
+  transition: 500ms;
   z-index: 1000;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .button:hover {
-  transition: 1000ms;
+  transition: 500ms;
   color: black;
   background-color: rgba(0, 128, 0, 0.678);
   box-shadow: 0 0 1em .25em rgba(0, 128, 0, 0.678),
